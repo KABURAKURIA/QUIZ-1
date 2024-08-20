@@ -10,7 +10,6 @@
             margin: 0;
             padding: 20px;
             background-color: #f4f4f4;
-            color: #333;
         }
         h1 {
             text-align: center;
@@ -25,57 +24,53 @@
         .question {
             background: #fff;
             border: 2px solid #333;
-            border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 15px;
             position: relative;
             width: 80%;
             max-width: 600px;
             margin: 10px 0;
-            transition: all 0.3s ease;
-            z-index: 1;
+            transition: all 0.3s ease-in-out;
         }
         .question:nth-child(odd) {
-            background: lightcoral;
-            border-color: darkred;
-            box-shadow: 0 4px 10px rgba(255, 0, 0, 0.4);
+            background: #fff;
+            border-color: lightcoral;
         }
         .question:nth-child(even) {
-            background: lightgreen;
-            border-color: darkgreen;
-            box-shadow: 0 4px 10px rgba(0, 255, 0, 0.4);
+            background: #e0f2f1;
+            border-color: #00796b;
         }
         .question:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
         }
         h3 {
-            margin: 0 0 15px;
+            margin: 0 0 10px;
             color: #333;
         }
         input[type="radio"] {
             margin-right: 10px;
         }
         .submit-button {
-            background-color: black;
+            background-color: #333;
             color: #fff;
             border: none;
             border-radius: 5px;
-            padding: 12px 24px;
-            font-size: 18px;
+            padding: 10px 20px;
+            font-size: 16px;
             cursor: pointer;
             transition: background-color 0.3s ease;
-            margin-top: 20px;
         }
         .submit-button:hover {
             background-color: #555;
         }
         .result {
             margin-top: 20px;
-            padding: 15px;
+            padding: 10px;
             border: 2px solid #333;
             background-color: #fff;
-            border-radius: 10px;
+            border-radius: 5px;
             width: 80%;
             max-width: 600px;
             text-align: center;
@@ -92,12 +87,8 @@
             color: #333;
         }
         .info a {
-            color: black;
+            color: #00796b;
             text-decoration: none;
-            font-weight: bold;
-        }
-        .info a:hover {
-            color: darkred;
         }
     </style>
 </head>
