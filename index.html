@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2: Fundamentals of Machine Learning Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .quiz-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .question {
+            background: #fff;
+            border: 2px solid #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            position: relative;
+            width: 80%;
+            max-width: 600px;
+            margin: 10px 0;
+            transition: all 0.3s ease-in-out;
+        }
+        .question:nth-child(odd) {
+            background: #fff;
+            border-color: lightcoral;
+        }
+        .question:nth-child(even) {
+            background: #e0f2f1;
+            border-color: #00796b;
+        }
+        .question:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        h3 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        .submit-button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .submit-button:hover {
+            background-color: #555;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid #333;
+            background-color: #fff;
+            border-radius: 5px;
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+        }
+        .correct-answer {
+            color: green;
+        }
+        .incorrect-answer {
+            color: red;
+        }
+        .info {
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+        .info a {
+            color: #00796b;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz on Fundamentals of Machine Learning</h1>
+    <div class="quiz-container">
+        <!-- Question 1 -->
+        <div class="question">
+            <h3>1. Which type of Machine Learning involves training on labeled data?</h3>
+            <input type="radio" name="q1" value="A"> A) Unsupervised Learning<br>
+            <input type="radio" name="q1" value="B"> B) Reinforcement Learning<br>
+            <input type="radio" name="q1" value="C"> C) Supervised Learning<br>
+            <input type="radio" name="q1" value="D"> D) Semi-Supervised Learning<br>
+        </div>
+        <!-- Question 2 -->
+        <div class="question">
+            <h3>2. What is the main goal of Unsupervised Learning?</h3>
+            <input type="radio" name="q2" value="A"> A) Predict a continuous value<br>
+            <input type="radio" name="q2" value="B"> B) Classify data into predefined categories<br>
+            <input type="radio" name="q2" value="C"> C) Identify hidden patterns or groupings in unlabeled data<br>
+            <input type="radio" name="q2" value="D"> D) Train a model using labeled examples<br>
+        </div>
+        <!-- Question 3 -->
+        <div class="question">
+            <h3>3. Which algorithm is used for binary classification problems?</h3>
+            <input type="radio" name="q3" value="A"> A) Linear Regression<br>
+            <input type="radio" name="q3" value="B"> B) Decision Tree<br>
+            <input type="radio" name="q3" value="C"> C) Logistic Regression<br>
+            <input type="radio" name="q3" value="D"> D) K-Means Clustering<br>
+        </div>
+        <!-- Question 4 -->
+        <div class="question">
+            <h3>4. What is the purpose of a Decision Tree algorithm?</h3>
+            <input type="radio" name="q4" value="A"> A) To predict a continuous outcome based on linear relationships<br>
+            <input type="radio" name="q4" value="B"> B) To classify data or make regression predictions by creating a tree-like model<br>
+            <input type="radio" name="q4" value="C"> C) To find clusters in unlabeled data<br>
+            <input type="radio" name="q4" value="D"> D) To optimize decisions in real-time scenarios<br>
+        </div>
+        <!-- Question 5 -->
+        <div class="question">
+            <h3>5. Why is data preprocessing essential in Machine Learning?</h3>
+            <input type="radio" name="q5" value="A"> A) To automatically select the best algorithm for a problem<br>
+            <input type="radio" name="q5" value="B"> B) To clean and transform raw data into a suitable format for modeling<br>
+            <input type="radio" name="q5" value="C"> C) To increase the number of features in the dataset<br>
+            <input type="radio" name="q5" value="D"> D) To reduce the size of the dataset<br>
+        </div>
+        <!-- Question 6 -->
+        <div class="question">
+            <h3>6. What does feature engineering involve?</h3>
+            <input type="radio" name="q6" value="A"> A) Selecting and modifying features to enhance model performance<br>
+            <input type="radio" name="q6" value="B"> B) Building neural networks with many layers<br>
+            <input type="radio" name="q6" value="C"> C) Training models using labeled data<br>
+            <input type="radio" name="q6" value="D"> D) Clustering data points into groups<br>
+        </div>
+        <!-- Question 7 -->
+        <div class="question">
+            <h3>7. Which of the following is a key difference between Supervised and Unsupervised Learning?</h3>
+            <input type="radio" name="q7" value="A"> A) Supervised Learning uses labeled data, while Unsupervised Learning uses unlabeled data<br>
+            <input type="radio" name="q7" value="B"> B) Unsupervised Learning is only used for regression tasks<br>
+            <input type="radio" name="q7" value="C"> C) Supervised Learning does not require feature engineering<br>
+            <input type="radio" name="q7" value="D"> D) Unsupervised Learning cannot handle continuous data<br>
+        </div>
+        <!-- Question 8 -->
+        <div class="question">
+            <h3>8. What type of learning is Reinforcement Learning best suited for?</h3>
+            <input type="radio" name="q8" value="A"> A) Classifying data into categories<br>
+            <input type="radio" name="q8" value="B"> B) Predicting continuous values<br>
+            <input type="radio" name="q8" value="C"> C) Making decisions through trial and error based on feedback<br>
+            <input type="radio" name="q8" value="D"> D) Finding clusters in data<br>
+        </div>
+        <!-- Question 9 -->
+        <div class="question">
+            <h3>9. Which algorithm would you use to predict a house price based on multiple features such as size and location?</h3>
+            <input type="radio" name="q9" value="A"> A) Logistic Regression<br>
+            <input type="radio" name="q9" value="B"> B) Decision Tree<br>
+            <input type="radio" name="q9" value="C"> C) Linear Regression<br>
+            <input type="radio" name="q9" value="D"> D) K-Means Clustering<br>
+        </div>
+        <!-- Question 10 -->
+        <div class="question">
+            <h3>10. What is the primary objective of feature engineering?</h3>
+            <input type="radio" name="q10" value="A"> A) To reduce the complexity of Machine Learning models<br>
+            <input type="radio" name="q10" value="B"> B) To create new features or modify existing ones to improve model performance<br>
+            <input type="radio" name="q10" value="C"> C) To automate the data cleaning process<br>
+            <input type="radio" name="q10" value="D"> D) To convert labeled data into unlabeled data<br>
+        </div>
+        <!-- Submit Button -->
+        <button class="submit-button" onclick="calculateScore()">Submit</button>
+        <!-- Result Section -->
+        <div id="result" class="result"></div>
+    </div>
+    <div class="info">
+        <p>For more learning, check out <a href="https://whatsapp.com/channel/0029VajFUQXG3R3pzrF7U92L">Learn AI/ML/DL in 210 days</a></p>
+    </div>
+    <script>
+        function calculateScore() {
+            const correctAnswers = ["C", "C", "C", "B", "B", "A", "A", "C", "C", "B"];
+            let score = 0;
+            let resultHTML = "<h2>Your Results:</h2>";
+            for (let i = 1; i <= 10; i++) {
+                const userAnswer = document.querySelector(`input[name="q${i}"]:checked`);
+                if (userAnswer) {
+                    if (userAnswer.value === correctAnswers[i - 1]) {
+                        score += 10;
+                    } else {
+                        resultHTML += `<p>Question ${i}: <span class="incorrect-answer">Your answer: ${userAnswer.value}</span> | <span class="correct-answer">Correct answer: ${correctAnswers[i - 1]}</span></p>`;
+                    }
+                } else {
+                    resultHTML += `<p>Question ${i}: <span class="incorrect-answer">No answer selected</span> | <span class="correct-answer">Correct answer: ${correctAnswers[i - 1]}</span></p>`;
+                }
+            }
+            resultHTML += `<h3>Your Score: ${score}/100</h3>`;
+            document.getElementById("result").innerHTML = resultHTML;
+        }
+    </script>
+</body>
+</html>
